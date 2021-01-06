@@ -4,15 +4,19 @@ import (
   "net/http"
   "github.com/gin-gonic/gin"
   "github.com/Vedantdwivedi/appointment/models" // new
-
+  "github.com/Vedantdwivedi/appointment/controllers"
 )
 
 func main() {
   r := gin.Default()
 
-  r.GET("/", func(c *gin.Context) {
-    c.JSON(http.StatusOK, gin.H{"data": "hello world"})    
-  })
-
-  r.Run()
-}cd app	
+  models.ConnectDatabase() // new
+	
+  
+  r.GET("/list", controllers.FindList) // new
+  //r.POST("/books", controllers.CreateBook) // new
+  //r.GET("/books/:id", controllers.FindBook) //new
+  //r.PATCH("/books/:id", controllers.UpdateBook) // new
+  //r.DELETE("/books/:id",controllers.DeleteBook)
+  //r.Run()
+}

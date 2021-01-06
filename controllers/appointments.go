@@ -7,7 +7,7 @@ import (
 
 // GET /books
 // Get all books
-func FindBooks(c *gin.Context) {
+func FindList(c *gin.Context) {
   var appointments []models.Appointment
   models.DB.Find(&appointments)
 
