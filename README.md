@@ -1,6 +1,6 @@
-# ResT API with Go Lang , GORM, Gin Gonic, SQL Lite
+# RESTAPI with Go Lang , GORM, Gin Gonic, SQL Lite
 
-This Api performs following tasks:
+This microservice performs following tasks:
 
 GET("/list")  - Give List of all the Doctors and Patients booked appointments
 GET("/lists/:name") - Give List of Doctor or Patient by name 
@@ -16,9 +16,9 @@ DELETE("/cancel/:id") - Enable Doctor/Patient to cancel the appointment
         "time": "09:00 AM - 2:00 PM"
     }
     
-##Note: for "name" & "designation" use the notation "Ram"/ "Doctor" (initials should be capital) it shall be easy to query later.
+## Note: for "name" & "designation" use the notation "Ram"/ "Doctor" (initials should be capital) it shall be easy to query later.
 
-##For further information please do visit the demo: https://youtu.be/kLmThX7ulCs
+## For further information please do visit the demo: https://youtu.be/kLmThX7ulCs
 
 # Area Of Improvement:
 1.) Need to apply authentication & authorisation
