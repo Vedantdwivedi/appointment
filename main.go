@@ -13,4 +13,4 @@ func main() {
   })
 
   r.Run()
-}
+}cd app	
