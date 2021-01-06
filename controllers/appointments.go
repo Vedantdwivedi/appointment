@@ -8,8 +8,8 @@ import (
 // GET /books
 // Get all books
 func FindBooks(c *gin.Context) {
-  var books []models.Appointment
+  var appointments []models.Appointment
   models.DB.Find(&appointments)
 
-  c.JSON(http.StatusOK, gin.H{"data": books})
+  c.JSON(http.StatusOK, gin.H{"data": appointments})
 }
