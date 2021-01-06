@@ -15,9 +15,9 @@ func main() {
 	
   
   r.GET("/list", controllers.FindList) // new
-  //r.POST("/books", controllers.CreateBook) // new
-  //r.GET("/books/:id", controllers.FindBook) //new
-  //r.PATCH("/books/:id", controllers.UpdateBook) // new
-  //r.DELETE("/books/:id",controllers.DeleteBook)
+  r.GET("/lists/:name", controllers.FindLists) // new 
+  r.POST("/book", controllers.CreateAppointment) // new
+  r.POST("/schedule", controllers.CreateSchedule) // new
+  r.DELETE("/cancel/:id",controllers.CancelAppointment)
   r.Run()
 }
